@@ -1,0 +1,75 @@
+body{ 
+  text-align:center; 
+}
+/*used to store the game and game menu*/
+#bordBorder{
+  padding-top:10px;
+  margin:0 auto;
+  height:320px;
+  background-color:#1F3C2F;
+  background: linear-gradient(to right,  black, #1F3C2F);
+  width:330px;
+  z-index:1px;
+}
+/*Game board squares*/
+.square{
+ background-color:#1F3C2F;
+ background: -o-linear-gradient(left, black, #1F3C2F);
+ background: -moz-linear-gradient(left, black, #1F3C2F);
+ background: linear-gradient(to right,  black, #1F3C2F);
+ z-index:3px;
+ height:85px; 
+ width:100px;
+ display:inline-block; 
+ margin-bottom:-6px;
+ margin-left:-5px; 
+ color:white;
+ overflow: hidden;
+ font-size:35px; 
+}
+
+/*Borders for game board squares*/
+.borderRightLeft{
+ border-left: 2px solid white;
+ border-right: 2px solid white;
+}.borderTop{
+ border-top: 2px solid white;
+}
+
+/*Borders for game menu selections - creates border around them when they are hovered over*/
+.border{
+  border:solid 2px white;
+  border-radius:50%;
+  margin:5px;
+  padding:5px;
+}
+
+#gameMenus{ 
+  padding:10px;
+  font-size:23px;
+  color:white;
+  z-index:1;
+}
+#game{
+  z-index:50;
+}
+
+}#gameMenus span{
+   font-size:20px;
+   color:white;   
+}
+
+
+#yourTurnMessage{ 
+  background-color:green;
+  height:40px;
+  width:150px;
+  margin: 0 auto;
+  padding-top:5px;
+  color:white; 
+  display:none;
+}
+
+/*Hide game board/text when game menu is open at start of game*/
+#currentPlayer,
+#game{display:none}
